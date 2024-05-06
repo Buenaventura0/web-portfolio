@@ -1,0 +1,179 @@
+/* Universal Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  max-width: 128rem;
+  margin: 0 auto;
+  font-size: 2.2rem;
+  text-align: center;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  font-family: Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a {
+  opacity: 0.9;
+}
+
+/* Header */
+
+/* Navbar */
+
+.header-container {
+  height: 6.9rem;
+  border-bottom: 0.1rem solid seashell;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  width: 128rem;
+  z-index: 2;
+  background-color: black;
+}
+
+.logo {
+  height: 5rem;
+  align-self: center;
+}
+
+.nav {
+  align-self: center;
+  display: inline-flex;
+  list-style: none;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+}
+
+a {
+  color: seashell;
+}
+
+/* Hero Banner */
+
+.hero-section {
+  height: 75rem;
+}
+
+.hero-container {
+  background-image: url(./images/img-mission-background.webp);
+  width: 120rem;
+  height: 70rem;
+  margin: 0 auto;
+}
+
+.banner-heading {
+  position: relative;
+  bottom: 38rem;
+  z-index: 1;
+  background-color: black;
+}
+
+.banner-item {
+  margin: 1.5rem auto;
+}
+
+/* Main Content */
+
+.main-container {
+  width: 100rem;
+  height: fit-content;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.main-heading {
+  margin: 2rem;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-item {
+  margin: 1rem;
+}
+
+.product-image {
+  width: 30rem;
+  height: 20rem;
+  margin-bottom: 1rem;
+}
+
+/* Locations Content */
+
+.locations-section {
+  height: 60rem;
+}
+
+.locations-background {
+  width: 120rem;
+  height: 60rem;
+  margin: 0 auto;
+  background-image: url(./images/img-locations-background.webp);
+  background-position: center 10%;
+}
+
+.locations-heading {
+  position: relative;
+  bottom: 55rem;
+  z-index: 1;
+  margin-bottom: 1.5rem;
+}
+
+.locations-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  position: relative;
+  bottom: 54rem;
+  z-index: 1;
+}
+
+.location {
+  background-color: black;
+  width: 30rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul li h3 {
+  margin: 0;
+}
+
+/* Footer Container */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30rem;
+}
+
+.copyright {
+  text-align: left;
+  padding-left: 2rem;
+}
