@@ -3,29 +3,107 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eugenio Palandri's Portfolio</title>
+    <title>Responsive Web Portfolio</title>
+    <link href="resources/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   </head>
   
   <body>
-    <header>
-      <h1>Eugenio Palandri</h1>
-      <p>Welcome to my GitHub Pages website!</p>
-    </header>
-  
-    <main>
-      <h2>Some of my current working projects:</h2>
-      <ul>
-        <li><a href="https://buenaventura0.github.io/web-portfolio/html-table-cheatsheet/">HTML Table Cheatsheet</a></li>
-        <li><a href="https://buenaventura0.github.io/web-portfolio/custom-web-style-guide/">Custom Web Style Guide</a></li>
-        <li><a href="https://buenaventura0.github.io/web-portfolio/tea-cozy-homepage/">Tea Cozy Homepage</a></li>
-      </ul>
-      <img src="https://i.giphy.com/xdkXW7Scx6gus.webp" alt="Seeds growing rapidly into green leaves"/>
-    </main>
+    <div class="body-grid">
 
-    <footer>
-      <p>Contact me at: <a href="mailto:eugeniopalandri@gmail.com" target="_blank">eugeniopalandri@gmail.com</a></p>
-      <p>My <a href="https://www.linkedin.com/in/eugenio-palandri-a41ab0180/" target="_blank">LinkedIn</a></p>
-    </footer>
+      <header class="header">
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="about" class="hero">
+        <div class="hero-banner"></div>
+        <div class="hero-title">
+          <h1>Front End Developer &#38; <br>
+            Computer Science Enthusiast</h1>
+        </div>
+      </section>
+
+      <main>
+        <header class="main-title">
+          <h2>These are some of my projects:</h2>
+        </header>
+
+        <div id="work" class="main-grid">
+          
+          <section class="main-grid-item">
+            <figure class="project-figure">
+              <a href="https://buenaventura0.github.io/web-portfolio/html-table-cheatsheet/" target="_blank">
+                <img class="project-image" src="./resources/images/html-table-reference.png" alt="HTML Table Reference Project Thumbnail">
+              </a>
+              <figcaption class="project-caption">
+                HTML Table Reference
+              </figcaption>
+            </figure>
+          </section>
+
+          <section class="main-grid-item">
+            <p>
+              This project documents a section of the HTML Table specification using its actual features to do so.
+            </p>
+          </section>
+
+          <section class="main-grid-item">
+            <figure class="project-figure">
+              <a href="https://buenaventura0.github.io/web-portfolio/custom-web-style-guide/" target="_blank">
+                <img class="project-image" src="./resources/images/custom-web-style-guide.png" alt="Custom Website Style Guide Project Thumbnail">
+              </a>
+              <figcaption class="project-caption">
+                Custom Website Style Guide
+              </figcaption>
+            </figure>
+          </section>
+
+          <section class="main-grid-item">
+            <p>
+              This project is a custom website style guide written with HTML &amp; CSS showing a design system with its style specifications
+              ready to be used in a web project.
+            </p>
+          </section>
+
+          <section class="main-grid-item">
+            <figure class="project-figure">
+              <a href="https://buenaventura0.github.io/web-portfolio/tea-cozy-homepage/" target="_blank">
+                <img class="project-image" src="./resources/images/tea-cozy.png" alt="Tea Cozy Project Thumbnail">
+              </a>
+              <figcaption class="project-caption">
+                Tea Cozy
+              </figcaption>
+            </figure>
+          </section>
+
+          <section class="main-grid-item">
+            <p>
+              This project is a homepage and landing page for a premium fiction teahouse displaying its products using a grid system.
+            </p>
+          </section>
+
+        </div>
+      </main>
+
+      <footer id="contact" class="footer">
+        <nav class="footer-nav">
+          <ul class="footer-list">
+            <li><a href="https://www.linkedin.com/in/eugenio-palandri-a41ab0180/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/Buenaventura0" target="_blank">GitHub</a></li>
+            <li><a href="mailto:eugeniopalandri@gmail.com" target="_blank">Email</a></li>
+          </ul>
+        </nav>
+      </footer>
+
+    </div>
     
   </body>
 </html>
